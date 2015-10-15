@@ -52,6 +52,9 @@ testdata = scale(testdata) # To keep dataset safe, create copy
                             # called "testdata". Note scale fn whose 
                             # default method centers and/or scales columns
                             # of a numeric matrix.
+                            
+# scale fn() automatically performs data normalization on all variables
+
 
 d = dist(testdata, method = "euclidean") 
 # Above dist fn() computes distances of all the observations in our dataset
